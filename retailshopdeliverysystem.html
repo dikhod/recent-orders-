@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login {
+            background-color: aliceblue;
+            text-align: center;
+            margin-top: 18%;
+        }
+
+         body{
+            background-image: url("grocery.jpg");
+        }
+    </style>
+    <script>
+        function check()
+        {
+            if(document.getElementById('user').value=="")
+            {
+                alert("please enter your mobile no");
+                return false;
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <!--phone No. login-->
+     
+    <div class="login">
+        <fieldset>
+            <legend>Login Page</legend>
+        <h4>Enter your Mobile Number :- </h4><input type="numbers" placeholder="Mobile Number" size="50" id="user" name="user" required/><br><br>
+        <a href="recentorders.html">
+        <button onclick="return check()">login</button>
+         </a>
+        </fieldset>
+    </div>
+
+    <!--order select-->
+
+    <!--address and tip-->
+    <!--delivery-->
+    <!--generate recipet-->
+</body>
+
+</html>

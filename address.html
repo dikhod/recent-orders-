@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: white;
+            box-sizing: border-box;
+            margin-bottom: 1.4rem;
+
+        }
+
+        .point{
+        background-color: blue;
+        }
+        .point:hover
+        {
+           cursor: pointer;
+        }
+      .adress
+      {
+          text-align: center;
+      }
+
+    </style>
+   <script>
+         function call()
+         {
+        alert("your order is successfully placed :)");
+         }
+
+         function refill()
+         {
+        alert("your can fill your details again :)");
+         }
+
+         function check()
+        {
+            if(document.getElementById('state').value=="")
+            {
+                alert("All the address details are mandatory !! ");
+                return false;
+            }
+            else{
+                alert(" your order is placed successfully");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+    
+    <legend>  
+    <h2>Address:-</h2>
+    </legend>
+    <div class="adress">
+    <label>House No./House Name: <input type="text" placeholder="House No./House Name" name="house" required/></label><br>
+    <label> Street :   <input type="text" placeholder="Street " name="Street" required/></label><br>
+    <label> Locality: <input type="text" placeholder=" Locality" name="Locality" size="30" required/> </label><br>
+    <label> Landmark:<input type="text"  placeholder=" Landmark" name="Landmark" size="30" required/> </label><br>
+    <label> City/pincode:      <input type="text" placeholder="City" name="City" required/></label> <label><input type="text" placeholder="pincode" name="pincode" required/></label><br>
+    <label> District:  <input type="text" placeholder="District" name="District" required/><br>
+    <label> State:     <input type="text" placeholder="State" id="state" name="State" required/></label><br>
+</fieldset>
+<fieldset>
+    <legend>
+<h4>Tip for delivery boy(Optional)</h4>
+</legend>
+1. 10 <input type="radio" name="x"/> 2. 15 <input type="radio" name="x"/> 3. 20 <input type="radio" name="x"/><br><br>
+</fieldset>
+<button class="point"  onclick="refill()">reset</button>  
+<a href="retailshopdeliverysystem.html" >
+<button class="point" onclick="return check()">Place Order</button>
+</a>
+</div>
+</body>
+</html>
